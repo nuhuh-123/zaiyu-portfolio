@@ -281,6 +281,66 @@ body {
 }
 
 /* ------------------------------
+   PROJECTS PAGE
+--------------------------------*/
+.projects-header {
+    margin-bottom: 2rem;
+}
+
+.projects-header h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects-header p {
+    color: #4b5563;
+}
+
+.projects-section {
+    margin-top: 2rem;
+}
+
+.projects-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.9rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.03);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 0.75rem;
+}
+
+.project-meta {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.project-meta li + li {
+    margin-top: 0.25rem;
+}
+
+/* ------------------------------
    RESPONSIVE
 --------------------------------*/
 @media (max-width: 700px) {
