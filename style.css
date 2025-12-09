@@ -80,6 +80,7 @@ body {
     font-size: 0.75rem;
     color: #2e7d32;
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .hero h1 {
@@ -259,28 +260,6 @@ body {
 }
 
 /* ------------------------------
-   CONTACT
---------------------------------*/
-#contact a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* ------------------------------
-   FOOTER
---------------------------------*/
-.site-footer {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 0.85rem;
-    color: #555;
-}
-
-/* ------------------------------
    PROJECTS PAGE
 --------------------------------*/
 .projects-header {
@@ -338,6 +317,28 @@ body {
 
 .project-meta li + li {
     margin-top: 0.25rem;
+}
+
+/* ------------------------------
+   CONTACT
+--------------------------------*/
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    color: #555;
 }
 
 /* ------------------------------
