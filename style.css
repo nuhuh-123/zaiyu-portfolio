@@ -35,6 +35,18 @@ body {
     letter-spacing: 0.05em;
 }
 
+/* Logo styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
 .nav a {
     margin-left: 1rem;
     text-decoration: none;
