@@ -1,61 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Certifications | Zai Yu</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Phua Zai Yu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <header class="site-header">
+        <div class="logo">Phua Zai Yu</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+    </header>
 
-<header class="site-header">
-  <div class="logo">Zai Yu</div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="certifications.html" class="active">Certifications</a>
-  </nav>
-</header>
+    <main>
 
-<main class="section">
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="hero-tag">Web Development · UI/UX Design</p>
+                    <h1>Hi, I’m Phua Zai Yu.</h1>
+                    <p class="hero-subtitle">
+                        I build clean, functional, and user-focused digital products with modern web technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn">View My Work</a>
+                        <a href="#certifications" class="btn-secondary">Certifications</a>
+                    </div>
+                    <ul class="hero-pill-list">
+                        <li>Front-end Development</li>
+                        <li>UI/UX Prototyping</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
 
-  <h1>Certifications</h1>
-  <p>Verified technical certifications demonstrating my skills.</p>
+                <div class="hero-side">
+                    <div class="hero-card">
+                        <p class="hero-card-label">Currently working on</p>
+                        <p class="hero-card-main">Personal Portfolio</p>
+                        <p class="hero-card-sub">
+                            Curating development and design projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="project-grid">
+        <!-- HIGHLIGHTS -->
+        <section class="section highlights">
+            <div class="highlight-card">
+                <h3>Focus Areas</h3>
+                <p>Front-end development, UI/UX design, and prototyping.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Tech & Tools</h3>
+                <p>HTML, CSS, JavaScript, React (learning), Figma, GitHub.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Goal</h3>
+                <p>Build real-world applications with strong usability and clean code.</p>
+            </div>
+        </section>
 
-    <article class="project-card">
-      <h3>HackerRank – CSS (Basic)</h3>
-      <p>
-        Demonstrates proficiency in CSS layout, selectors, and responsive styling.
-      </p>
-      <ul class="project-meta">
-        <li><strong>Platform:</strong> HackerRank</li>
-        <li><strong>Category:</strong> Front-end Styling</li>
-      </ul>
-      <!-- later you can add <img src="images/css-cert.png"> -->
-    </article>
+        <!-- FEATURED PROJECTS -->
+        <section class="section featured">
+            <div class="featured-header">
+                <h2>Featured Work</h2>
+                <a href="projects.html" class="link-inline">See all projects →</a>
+            </div>
 
-    <article class="project-card">
-      <h3>HackerRank – JavaScript (Basic)</h3>
-      <p>
-        Demonstrates understanding of JavaScript fundamentals including functions,
-        loops, and basic logic.
-      </p>
-      <ul class="project-meta">
-        <li><strong>Platform:</strong> HackerRank</li>
-        <li><strong>Category:</strong> Programming Fundamentals</li>
-      </ul>
-    </article>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <h3>Travel Packing List App</h3>
+                    <p>
+                        A React-based app that helps users track packing items and progress.
+                    </p>
+                    <p class="featured-meta">Category: Development</p>
+                    <a href="projects.html" class="link-inline">View Project</a>
+                </article>
 
-  </div>
+                <article class="featured-card">
+                    <h3>Sustainable E-Commerce UI</h3>
+                    <p>
+                        A high-fidelity Figma prototype for a sustainable clothing store.
+                    </p>
+                    <p class="featured-meta">Category: Design</p>
+                    <a href="projects.html" class="link-inline">View Project</a>
+                </article>
+            </div>
+        </section>
 
-</main>
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <p>Verified technical certifications demonstrating core web development skills.</p>
 
-<footer class="site-footer">
-  <p>© 2026 Zai Yu. All rights reserved.</p>
-</footer>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <h3>HackerRank CSS (Basic)</h3>
+                    <p>Certification validating fundamental CSS concepts and layout skills.</p>
+                    <a href="cssBasic.pdf" target="_blank" class="link-inline">View Certificate</a><br>
+                    <a href="cssBasic.pdf" download class="link-inline">Download PDF</a>
+                </article>
 
+                <article class="featured-card">
+                    <h3>HackerRank JavaScript (Basic)</h3>
+                    <p>Certification validating core JavaScript syntax and logic.</p>
+                    <a href="JSBasic.pdf" target="_blank" class="link-inline">View Certificate</a><br>
+                    <a href="JSBasic.pdf" download class="link-inline">Download PDF</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Phua Zai Yu · Portfolio</p>
+    </footer>
 </body>
 </html>
