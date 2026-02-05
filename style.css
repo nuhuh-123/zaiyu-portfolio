@@ -393,29 +393,27 @@ body{
 }
 
 /* Gallery inside project cards */
-.project-gallery{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0 0.75rem;
-}
-
-.project-gallery figure{
-  margin: 0;
-}
-
+/* --- Make all project galleries more consistent --- */
 .project-gallery img{
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(15,23,42,0.10);
-  border: 1px solid rgba(15,23,42,0.08);
+  height: 180px;          /* prevents super tall screenshots */
+  object-fit: cover;
+  object-position: center top;
 }
 
+/* --- Special layout for tall mobile screenshots (Recycle Log) --- */
+.project-gallery.mobile-2col{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+/* Make the last image span full width so it looks balanced */
+.project-gallery.mobile-2col figure:last-child{
+  grid-column: 1 / -1;
+}
+
+/* Optional: slightly smaller captions so it looks cleaner */
 .project-gallery figcaption{
-  margin-top: 0.35rem;
-  font-size: 0.8rem;
-  color: rgba(15,23,42,0.70);
+  font-size: 0.78rem;
 }
 
 /* ------------------------------
