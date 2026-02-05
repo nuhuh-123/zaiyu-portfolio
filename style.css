@@ -400,13 +400,15 @@ body {
 
 .cert-img {
   width: 100%;
-  height: 180px;              /* controls how tall the preview is */
-  object-fit: cover;         /* crops instead of stretching */
+  max-width: 100%;
+  height: 160px;
+  object-fit: contain;   /* show whole cert instead of cropping */
   border-radius: 8px;
   margin-bottom: 12px;
   background-color: #f1f5f9;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
 }
+
 
 .cert-img:hover {
   transform: scale(1.02);
