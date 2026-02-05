@@ -29,12 +29,15 @@
 }
 
 body{
-  background: radial-gradient(1200px 800px at 20% -10%, rgba(34,211,238,0.18), rgba(15,23,42,0) 60%),
-              radial-gradient(1000px 700px at 90% 0%, rgba(59,130,246,0.14), rgba(15,23,42,0) 55%),
-              var(--primary);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(59,130,246,0.10), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(34,211,238,0.08), transparent 60%),
+    #F8FAFC;
+    
   color: var(--text);
   line-height: 1.6;
 }
+
 
 /* ------------------------------
    HEADER / NAVBAR
