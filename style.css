@@ -42,7 +42,7 @@ body{
 /* ------------------------------
    HEADER / NAVBAR
 --------------------------------*/
-.site-header{
+.site-header {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -51,9 +51,8 @@ body{
   align-items: center;
   padding: 0.75rem 2rem;
 
-  background: rgba(15,23,42,0.86);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(241,245,249,0.10);
+  background: #0F172A;   /* solid primary */
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .logo-link{
