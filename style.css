@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap");
+
 /* ------------------------------
    THEME TOKENS (from your design doc)
    Primary: #0F172A
@@ -25,7 +27,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Manrope", "Segoe UI", sans-serif;
 }
 
 body{
@@ -36,6 +38,12 @@ body{
     
   color: var(--text);
   line-height: 1.6;
+}
+
+h1, h2, h3{
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 
@@ -346,12 +354,23 @@ body{
 .projects-section h2{
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.projects-section h2::after{
+  content: "";
+  height: 2px;
+  flex: 1 1 auto;
+  background: linear-gradient(90deg, rgba(59,130,246,0.4), rgba(34,211,238,0.1));
+  border-radius: 999px;
 }
 
 .project-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 1.75rem;
   margin-top: 0.5rem;
 }
 
@@ -361,6 +380,9 @@ body{
   border-radius: 14px;
   box-shadow: 0 10px 22px rgba(15,23,42,0.08);
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -378,7 +400,7 @@ body{
 .project-card p{
   font-size: 0.95rem;
   color: var(--muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.2rem;
 }
 
 .project-meta{
@@ -386,18 +408,43 @@ body{
   padding-left: 0;
   font-size: 0.9rem;
   color: rgba(15,23,42,0.70);
+  margin-top: auto;
+  display: grid;
+  gap: 0.35rem;
 }
 
 .project-meta li + li{
-  margin-top: 0.25rem;
+  margin-top: 0;
+}
+
+.project-meta strong{
+  color: var(--primary);
 }
 
 /* Gallery inside project cards */
 /* --- Make all project galleries more consistent --- */
+.project-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(241,245,249,0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+.project-gallery figure{
+  display: grid;
+  gap: 0.4rem;
+}
+
 .project-gallery img{
+  width: 100%;
   height: 180px;          /* prevents super tall screenshots */
   object-fit: cover;
   object-position: center top;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.08);
 }
 
 /* --- Special layout for tall mobile screenshots (Recycle Log) --- */
@@ -414,6 +461,13 @@ body{
 /* Optional: slightly smaller captions so it looks cleaner */
 .project-gallery figcaption{
   font-size: 0.78rem;
+  color: rgba(15,23,42,0.68);
+}
+
+.project-gallery img.is-mobile{
+  height: 220px;
+  object-fit: contain;
+  background: white;
 }
 
 /* ------------------------------
@@ -478,5 +532,13 @@ a:hover{
   .section{
     padding: 2rem 1.5rem;
     margin: 2rem 1rem;
+  }
+
+  .project-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
