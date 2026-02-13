@@ -451,21 +451,6 @@ h1, h2, h3{
   color: var(--primary);
 }
 
-.card-link{
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-link:hover{
-  color: inherit;
-}
-
-.card-link .card-cta{
-  color: var(--secondary);
-  font-weight: 600;
-}
-
 .project-card p{
   font-size: 0.95rem;
   color: var(--muted);
@@ -522,11 +507,6 @@ h1, h2, h3{
   align-items: start;
 }
 
-/* Make the last image span full width so it looks balanced */
-.project-gallery.mobile-2col figure:last-child{
-  grid-column: 1 / -1;
-}
-
 /* Optional: slightly smaller captions so it looks cleaner */
 .project-gallery figcaption{
   font-size: 0.78rem;
@@ -534,7 +514,9 @@ h1, h2, h3{
 }
 
 .project-gallery img.is-mobile{
-  height: 220px;
+  height: 200px;
+  width: min(100%, 180px);
+  justify-self: center;
   object-fit: contain;
   background: white;
 }
@@ -636,6 +618,18 @@ h1, h2, h3{
   height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+/* E-commerce detail page: preserve full screenshots without aggressive crop */
+.project-ecommerce .project-gallery.desktop-gallery{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-ecommerce .project-gallery.desktop-gallery img{
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: white;
+  padding: 0.35rem;
 }
 
 /* ------------------------------
