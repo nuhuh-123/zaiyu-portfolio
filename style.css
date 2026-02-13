@@ -451,6 +451,21 @@ h1, h2, h3{
   color: var(--primary);
 }
 
+.card-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover{
+  color: inherit;
+}
+
+.card-link .card-cta{
+  color: var(--secondary);
+  font-weight: 600;
+}
+
 .project-card p{
   font-size: 0.95rem;
   color: var(--muted);
