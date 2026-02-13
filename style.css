@@ -539,6 +539,22 @@ h1, h2, h3{
   background: white;
 }
 
+/* Project detail pages: keep mobile screenshots at phone-like size */
+.project-page .project-gallery.mobile-2col{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 260px));
+  justify-content: start;
+}
+
+.project-page .project-gallery.mobile-2col figure:last-child{
+  grid-column: auto;
+}
+
+.project-page .project-gallery img.is-mobile{
+  height: auto;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+}
+
 /* ------------------------------
    CERT IMAGES
 --------------------------------*/
@@ -609,5 +625,9 @@ a:hover{
 
   .project-gallery{
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .project-page .project-gallery.mobile-2col{
+    grid-template-columns: 1fr;
   }
 }
